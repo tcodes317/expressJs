@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/icon" href="./" />
+    <link rel="shortcut-icon" type="image/icon" href="./" />
+    <script></script>
+    <style>
+        .box-container{
+            position: relative;
+        }
+        .box-container .box-content{
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .box-container .box-content .b-c-i{
+            margin-right: 30px;
+            width: 300px;
+            heighT: 200px;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+        .box-container .box-content .b-c-i img{
+            width: 100%;
+        }
+        .box-container .box-content .b-c-ii > *{
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <a href="?id=%ID%" class="box-content">
+            <div class="b-c-i">
+                <img src="%imgSrc%" alt="" />
+            </div>
+            <div class="b-c-ii">
+                <h2>Name - %Name%</h2>
+                <div>ModelName - %modeName%</div>
+                <div>ModelNumber - %modelNumber%</div>
+                <div>ROM - %ROM%</div>
+                <div>Description: <br />%Description%</div>
+                <div>Price - $%price%</div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

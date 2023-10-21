@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container .cont-content{
+            position: relative;
+            width: 100%;
+        }
+        .container .cont-content a{
+            position: absolute;
+            padding: 10px 15px;
+            border-radius: 100px;
+            right: 0;
+            top: 0;
+            background-color: rgb(255, 161, 127);
+            border: none;
+            cursor: pointer;
+            color: #fff;
+        }
+        .container .cont-content a:hover{
+            background-color: orangered;
+            transition: all linear .3s;
+        }
+        .container .cont-content .cont-flex{
+            display: flex;
+            align-items: center;
+        }
+        .container .cont-content .cont-flex .img{
+            width: 400px;
+            height: 400px;
+            border: 1px solid;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cont-content">
+            <a href="/" hreflang="en">Back</a>
+            <div class="cont-flex">
+                <div class="img cont-flex-i">
+                    <img src="%imgSrc%" alt="" />
+                </div>
+                <div class="cont-flex-ii">
+                    <h2>%Name%</h2> <!-- %Name% -->
+                    <div>$ - %price%</div> <!-- %Price% -->
+                    <div class="m-i">
+                        <div class="m-i-i">
+                            <h4>Product Details</h4>
+                            <div></div>
+                        </div>
+                        <div class="m-i-ii" style="display: flex; align-items: center">
+                            <h4>Model Number:</h4>
+                            <div style="margin-left: 5px;"></div>
+                        </div>
+                        <div class="m-i-iii" style="display: flex; align-items: center">
+                            <h4>Model Name:</h4>
+                            <div style="margin-left: 5px;">iPhone SE</div>
+                        </div>
+                        <div class="m-i-iv" style="display: flex; align-items: center">
+                            <h4>ROM:</h4>
+                            <div style="margin-left: 5px;">128GB</div>
+                        </div>
+                    </div>
+                    <div class="m-ii">
+                        <h4>Product Description</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

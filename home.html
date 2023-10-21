@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 70%;
+            margin: 0 auto;
+        }
+        header, main{
+            position: relative;
+        }
+        header .h-flex a img{
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            border: 1px solid;
+        }
+        header .h-flex{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .h-flex nav a{
+            color: #000;
+            text-decoration: none;
+            margin: 0 5px;
+            border-bottom: 2px solid transparent;
+        }
+        header .h-flex nav a:hover{
+            border-bottom: 2px solid #000;
+        }
+        main .m-flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <script></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="h-flex">
+                <a href="" hreflang="">
+                    <img src="%img%" alt="" />
+                </a>
+                <nav class="">
+                    <a href="/home" hreflang="">Home</a>
+                    <a href="/page" hreflang="">Page</a>
+                    <a href="/about" hreflang="">About</a>
+                    <a href="/contact" hreflang="">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="m-flex">
+                <h2>%Content%</h2>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
